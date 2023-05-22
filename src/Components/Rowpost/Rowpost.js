@@ -27,7 +27,7 @@ export default function Rowpost(props) {
 
   const handleMovie = (id) => {
       axios.get(`/movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
         //setUrlId(response.data)
         if(response.data.results.length !== 0){
           setUrlId(response.data.results[0])
